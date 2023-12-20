@@ -14,11 +14,13 @@ export class GraphService {
   ];
   private edges: Edge[] = [
     new Edge('S', 'A', 'S', this.nodes[1]),
+    new Edge('R', 'P', 'S', this.nodes[1]),
+    new Edge('S', 'P', 'S', this.nodes[1]),
+    new Edge('R', 'P', 'S', this.nodes[1]),
     new Edge('R', 'U', 'S', this.nodes[0]),
     new Edge('R', 'A', 'S', this.nodes[2]),
     new Edge('R', 'P', 'B', this.nodes[4]),
     new Edge('R', 'A', 'S', this.nodes[3]),
-    new Edge('R', 'P', 'S', this.nodes[5]),
   ];
   addNode(node: Node): void {
     this.nodes.push(node);
