@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, NotFoundException } from '@nestjs/common';
 import { Node } from '../models/node.model';
 import { Edge } from '../models/edge.model';
 
@@ -53,11 +53,9 @@ export class GraphService {
     if (matchingEdge) {
       return matchingEdge.destination.status;
     } else {
-      // Handle the case where no matching edge is found (e.g., return a default value, log it, etc.)
-      console.warn(
+      throw new NotFoundException(
         `No matching edge found for transition ${transition} and status ${currentStatus}`,
       );
-      return -1; // Or any other default value
     }
   }
 }

@@ -49,3 +49,9 @@ Application should be running on http://localhost:5200.
 
   - `/transition`: Retrieves the next status for a given transition.
   - `/transition-path`: Calculates the path to the next status for a given transition and a group of statuses. 
+
+  ## Example Requests using postman
+
+![transition](./images/transition.png)
+
+![transition-path](./images/transition-path.png)
