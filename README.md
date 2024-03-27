@@ -24,6 +24,14 @@
 
 ## Description
 
+The app is a representation of constant graph data.
+Each node is a status represent by number
+Each arch is set of rules that define if on this transition he will move to the following state.
+The set of rules on each arch defined as : [Action,Rule,Type]
+Type can be : S- SINGLE / B- BULK
+Action can be S- : SEND / R- RETURN
+Rule can be : A - ADMIN /P- PARTNER/U- USER /C- COURIER
+
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
 ## Installation
