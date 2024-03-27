@@ -32,6 +32,12 @@ Type can be : S- SINGLE / B- BULK
 Action can be S- : SEND / R- RETURN
 Rule can be : A - ADMIN /P- PARTNER/U- USER /C- COURIER
 
+The system should support the following :
+1. Given a transition, the system will know which status is the next one
+2. Given a transition , and bulk of statuses : the system will find the correct path to the next
+status of the given transition.
+For example : given a transition [R,A,S] with array of statuses [ 4 , 5 , 2 ]
+
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
 ## Installation
